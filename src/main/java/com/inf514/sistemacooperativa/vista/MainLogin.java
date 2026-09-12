@@ -29,88 +29,92 @@ public class MainLogin extends javax.swing.JFrame {
     private void initComponents() {
 
         backgroundMainLogin = new javax.swing.JPanel();
-        backgroudLogo = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        pnlBackgroudLogo = new javax.swing.JPanel();
+        lblIconCooperativa = new javax.swing.JLabel();
+        lblSistemaDeCooperativa = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        backgroundLoginForm = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        pnlBackgroundLoginForm = new javax.swing.JPanel();
+        lblInicioDeSesion = new javax.swing.JLabel();
+        lblNombre = new javax.swing.JLabel();
         txtNombre = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        txtContrasenia = new javax.swing.JTextField();
+        lblContrasenia = new javax.swing.JLabel();
         pnBottonIngresar = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        pwdContrasenia = new javax.swing.JPasswordField();
         pnlBackgroundRegistro = new javax.swing.JPanel();
-        txtRegistroNuevoUsuario = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        lblRegistroNuevoUsuario = new javax.swing.JLabel();
+        lblNombreCompleto = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
+        lblCedula = new javax.swing.JLabel();
         txtApellido = new javax.swing.JTextField();
         tfNombreCompleto = new javax.swing.JTextField();
         jPasswordField1 = new javax.swing.JPasswordField();
         jTextField3 = new javax.swing.JTextField();
         txtTelefono = new javax.swing.JTextField();
         txtCorreoElectronico = new javax.swing.JTextField();
-        txtCedula = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        txaDireccion = new javax.swing.JTextArea();
         pnlRegistarBotton = new javax.swing.JPanel();
         txtRegistar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        backgroundMainLogin.setBackground(new java.awt.Color(24, 75, 95));
         backgroundMainLogin.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        backgroudLogo.setBackground(new java.awt.Color(221, 238, 249));
+        pnlBackgroudLogo.setBackground(new java.awt.Color(221, 238, 249));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("D:\\user\\Julio\\UASD\\ProgramacionII\\trabajo-en-equipo256.png")); // NOI18N
+        lblIconCooperativa.setIcon(new javax.swing.ImageIcon("D:\\user\\Julio\\UASD\\ProgramacionII\\trabajo-en-equipo256.png")); // NOI18N
 
-        javax.swing.GroupLayout backgroudLogoLayout = new javax.swing.GroupLayout(backgroudLogo);
-        backgroudLogo.setLayout(backgroudLogoLayout);
-        backgroudLogoLayout.setHorizontalGroup(
-            backgroudLogoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(backgroudLogoLayout.createSequentialGroup()
+        javax.swing.GroupLayout pnlBackgroudLogoLayout = new javax.swing.GroupLayout(pnlBackgroudLogo);
+        pnlBackgroudLogo.setLayout(pnlBackgroudLogoLayout);
+        pnlBackgroudLogoLayout.setHorizontalGroup(
+            pnlBackgroudLogoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBackgroudLogoLayout.createSequentialGroup()
                 .addGap(75, 75, 75)
-                .addComponent(jLabel5)
+                .addComponent(lblIconCooperativa)
                 .addContainerGap(89, Short.MAX_VALUE))
         );
-        backgroudLogoLayout.setVerticalGroup(
-            backgroudLogoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backgroudLogoLayout.createSequentialGroup()
+        pnlBackgroudLogoLayout.setVerticalGroup(
+            pnlBackgroudLogoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBackgroudLogoLayout.createSequentialGroup()
                 .addContainerGap(182, Short.MAX_VALUE)
-                .addComponent(jLabel5)
+                .addComponent(lblIconCooperativa)
                 .addGap(162, 162, 162))
         );
 
-        backgroundMainLogin.add(backgroudLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 600));
+        backgroundMainLogin.add(pnlBackgroudLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 600));
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel7.setText("Sistema de coopertiva");
-        backgroundMainLogin.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 20, -1, -1));
+        lblSistemaDeCooperativa.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        lblSistemaDeCooperativa.setForeground(new java.awt.Color(0, 0, 0));
+        lblSistemaDeCooperativa.setText("Sistema de cooperativa");
+        backgroundMainLogin.add(lblSistemaDeCooperativa, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 20, -1, -1));
 
-        backgroundLoginForm.setBackground(new java.awt.Color(244, 239, 230));
+        pnlBackgroundLoginForm.setBackground(new java.awt.Color(244, 239, 230));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel2.setText("Contraseña:");
+        lblInicioDeSesion.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lblInicioDeSesion.setForeground(new java.awt.Color(0, 0, 0));
+        lblInicioDeSesion.setText("Inicio de Sesion");
 
+        lblNombre.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lblNombre.setForeground(new java.awt.Color(0, 0, 0));
+        lblNombre.setText("Cedula");
+
+        txtNombre.setText("Digite su Cedula sin guiones");
         txtNombre.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 153, 255)));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("Cedula");
+        lblContrasenia.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lblContrasenia.setForeground(new java.awt.Color(0, 0, 0));
+        lblContrasenia.setText("Contraseña:");
 
-        txtContrasenia.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 51, 255)));
-
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Ingresar");
 
@@ -152,62 +156,60 @@ public class MainLogin extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel6.setText("Inicio de Sesion");
+        pwdContrasenia.setText("jPasswordField2");
 
-        javax.swing.GroupLayout backgroundLoginFormLayout = new javax.swing.GroupLayout(backgroundLoginForm);
-        backgroundLoginForm.setLayout(backgroundLoginFormLayout);
-        backgroundLoginFormLayout.setHorizontalGroup(
-            backgroundLoginFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(backgroundLoginFormLayout.createSequentialGroup()
+        javax.swing.GroupLayout pnlBackgroundLoginFormLayout = new javax.swing.GroupLayout(pnlBackgroundLoginForm);
+        pnlBackgroundLoginForm.setLayout(pnlBackgroundLoginFormLayout);
+        pnlBackgroundLoginFormLayout.setHorizontalGroup(
+            pnlBackgroundLoginFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBackgroundLoginFormLayout.createSequentialGroup()
                 .addGap(159, 159, 159)
-                .addGroup(backgroundLoginFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2)
+                .addGroup(pnlBackgroundLoginFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblInicioDeSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblContrasenia)
                     .addComponent(txtNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 351, Short.MAX_VALUE)
-                    .addGroup(backgroundLoginFormLayout.createSequentialGroup()
+                    .addGroup(pnlBackgroundLoginFormLayout.createSequentialGroup()
                         .addComponent(pnBottonIngresar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(txtContrasenia))
+                    .addComponent(pwdContrasenia))
                 .addGap(0, 120, Short.MAX_VALUE))
         );
-        backgroundLoginFormLayout.setVerticalGroup(
-            backgroundLoginFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(backgroundLoginFormLayout.createSequentialGroup()
+        pnlBackgroundLoginFormLayout.setVerticalGroup(
+            pnlBackgroundLoginFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBackgroundLoginFormLayout.createSequentialGroup()
                 .addGap(22, 22, 22)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblInicioDeSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(17, 17, 17)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtContrasenia, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(backgroundLoginFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(pnBottonIngresar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(115, Short.MAX_VALUE))
+                .addGroup(pnlBackgroundLoginFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(pnlBackgroundLoginFormLayout.createSequentialGroup()
+                        .addComponent(lblContrasenia)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(pwdContrasenia, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(42, 42, 42)
+                        .addComponent(pnBottonIngresar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(85, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("Login", backgroundLoginForm);
+        jTabbedPane1.addTab("Login", pnlBackgroundLoginForm);
 
         pnlBackgroundRegistro.setBackground(new java.awt.Color(244, 239, 230));
 
-        txtRegistroNuevoUsuario.setBackground(new java.awt.Color(255, 255, 255));
-        txtRegistroNuevoUsuario.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        txtRegistroNuevoUsuario.setForeground(new java.awt.Color(0, 0, 0));
-        txtRegistroNuevoUsuario.setText("Registro Nuevo usuario");
+        lblRegistroNuevoUsuario.setBackground(new java.awt.Color(255, 255, 255));
+        lblRegistroNuevoUsuario.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lblRegistroNuevoUsuario.setForeground(new java.awt.Color(0, 0, 0));
+        lblRegistroNuevoUsuario.setText("Registro Nuevo usuario");
 
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel9.setText("Nombre Completo");
+        lblNombreCompleto.setForeground(new java.awt.Color(0, 0, 0));
+        lblNombreCompleto.setText("Nombre Completo");
 
         jLabel10.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel10.setText("Cedula:");
 
         jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Telefono:");
@@ -224,10 +226,10 @@ public class MainLogin extends javax.swing.JFrame {
         jLabel15.setForeground(new java.awt.Color(0, 0, 0));
         jLabel15.setText("Direccion:");
 
-        jLabel16.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel16.setText("Apellido:");
+        lblCedula.setForeground(new java.awt.Color(0, 0, 0));
+        lblCedula.setText("Cedula");
 
-        txtApellido.setText("apellidos");
+        txtApellido.setText("digite su cedula sin guiones");
         txtApellido.addActionListener(this::txtApellidoActionPerformed);
 
         tfNombreCompleto.setText("Nombre Completo");
@@ -242,12 +244,9 @@ public class MainLogin extends javax.swing.JFrame {
 
         txtCorreoElectronico.setText("Corro Electronico");
 
-        txtCedula.setText("Cedula");
-        txtCedula.addActionListener(this::txtCedulaActionPerformed);
-
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        txaDireccion.setColumns(20);
+        txaDireccion.setRows(5);
+        jScrollPane1.setViewportView(txaDireccion);
 
         txtRegistar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         txtRegistar.setText("REGISTAR");
@@ -275,76 +274,84 @@ public class MainLogin extends javax.swing.JFrame {
             pnlBackgroundRegistroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlBackgroundRegistroLayout.createSequentialGroup()
                 .addGap(116, 116, 116)
-                .addComponent(txtRegistroNuevoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblRegistroNuevoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(pnlBackgroundRegistroLayout.createSequentialGroup()
                 .addGap(34, 34, 34)
                 .addGroup(pnlBackgroundRegistroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlBackgroundRegistroLayout.createSequentialGroup()
                         .addGroup(pnlBackgroundRegistroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel16)
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel14)
-                            .addComponent(txtCedula)
+                            .addComponent(lblCedula)
+                            .addComponent(lblNombreCompleto)
                             .addComponent(txtApellido)
-                            .addComponent(tfNombreCompleto, javax.swing.GroupLayout.DEFAULT_SIZE, 190, Short.MAX_VALUE))
+                            .addComponent(tfNombreCompleto))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(pnlBackgroundRegistroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel11)
                             .addComponent(jLabel13)
                             .addComponent(txtCorreoElectronico, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
                             .addComponent(jLabel12)
-                            .addComponent(jPasswordField1)
-                            .addComponent(txtTelefono))
+                            .addComponent(jPasswordField1))
                         .addGap(82, 82, 82))
                     .addGroup(pnlBackgroundRegistroLayout.createSequentialGroup()
                         .addGroup(pnlBackgroundRegistroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel15)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 393, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(pnlRegistarBotton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(48, 48, 48))))
+                        .addGap(48, 48, 48))
+                    .addGroup(pnlBackgroundRegistroLayout.createSequentialGroup()
+                        .addComponent(jLabel10)
+                        .addGroup(pnlBackgroundRegistroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(pnlBackgroundRegistroLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(pnlBackgroundRegistroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel14)
+                                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel11))
+                                .addContainerGap(400, Short.MAX_VALUE))
+                            .addGroup(pnlBackgroundRegistroLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))))))
         );
         pnlBackgroundRegistroLayout.setVerticalGroup(
             pnlBackgroundRegistroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlBackgroundRegistroLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(txtRegistroNuevoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblRegistroNuevoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(22, 22, 22)
-                .addGroup(pnlBackgroundRegistroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(pnlBackgroundRegistroLayout.createSequentialGroup()
-                        .addComponent(jLabel9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(tfNombreCompleto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnlBackgroundRegistroLayout.createSequentialGroup()
-                        .addComponent(jLabel11)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(12, 12, 12)
+                .addComponent(lblNombreCompleto)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tfNombreCompleto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(pnlBackgroundRegistroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlBackgroundRegistroLayout.createSequentialGroup()
-                        .addComponent(jLabel12)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txtCorreoElectronico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel13)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnlBackgroundRegistroLayout.createSequentialGroup()
-                        .addComponent(jLabel16)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel10)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtCedula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addGroup(pnlBackgroundRegistroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(pnlBackgroundRegistroLayout.createSequentialGroup()
+                                .addComponent(jLabel12)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(txtCorreoElectronico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel13)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(pnlBackgroundRegistroLayout.createSequentialGroup()
+                                .addComponent(lblCedula)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(12, 12, 12)
+                                .addComponent(jLabel14)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel11)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel10)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBackgroundRegistroLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel14)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)))
                 .addComponent(jLabel15)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pnlBackgroundRegistroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -352,7 +359,7 @@ public class MainLogin extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBackgroundRegistroLayout.createSequentialGroup()
                         .addComponent(pnlRegistarBotton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(14, 14, 14)))
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Registro", pnlBackgroundRegistro);
@@ -385,49 +392,44 @@ public class MainLogin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtApellidoActionPerformed
 
-    private void txtCedulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCedulaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtCedulaActionPerformed
-
  
  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel backgroudLogo;
-    private javax.swing.JPanel backgroundLoginForm;
     private javax.swing.JPanel backgroundMainLogin;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField3;
+    private javax.swing.JLabel lblCedula;
+    private javax.swing.JLabel lblContrasenia;
+    private javax.swing.JLabel lblIconCooperativa;
+    private javax.swing.JLabel lblInicioDeSesion;
+    private javax.swing.JLabel lblNombre;
+    private javax.swing.JLabel lblNombreCompleto;
+    private javax.swing.JLabel lblRegistroNuevoUsuario;
+    private javax.swing.JLabel lblSistemaDeCooperativa;
     private javax.swing.JPanel pnBottonIngresar;
+    private javax.swing.JPanel pnlBackgroudLogo;
+    private javax.swing.JPanel pnlBackgroundLoginForm;
     private javax.swing.JPanel pnlBackgroundRegistro;
     private javax.swing.JPanel pnlRegistarBotton;
+    private javax.swing.JPasswordField pwdContrasenia;
     private javax.swing.JTextField tfNombreCompleto;
+    private javax.swing.JTextArea txaDireccion;
     private javax.swing.JTextField txtApellido;
-    private javax.swing.JTextField txtCedula;
-    private javax.swing.JTextField txtContrasenia;
     private javax.swing.JTextField txtCorreoElectronico;
     private javax.swing.JTextField txtNombre;
     private javax.swing.JLabel txtRegistar;
-    private javax.swing.JLabel txtRegistroNuevoUsuario;
     private javax.swing.JTextField txtTelefono;
     // End of variables declaration//GEN-END:variables
 }

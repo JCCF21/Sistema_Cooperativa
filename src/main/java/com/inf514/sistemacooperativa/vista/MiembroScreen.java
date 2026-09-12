@@ -48,11 +48,11 @@ public class MiembroScreen extends javax.swing.JFrame {
         panelEliminar = new javax.swing.JPanel();
         txtEliminar = new javax.swing.JLabel();
         txtBuscarPorCedulaOID = new javax.swing.JLabel();
-        tfBusquedaPorCedulaOID = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         cbEstado = new javax.swing.JComboBox<>();
         txtTipodeCuenta = new javax.swing.JLabel();
         cbTipoDeCuenta = new javax.swing.JComboBox<>();
+        txtBuscarporCedulaOID = new javax.swing.JTextField();
         pnlSidePanel = new javax.swing.JPanel();
         panelInicioBoton = new javax.swing.JPanel();
         txtInicio = new javax.swing.JLabel();
@@ -61,10 +61,10 @@ public class MiembroScreen extends javax.swing.JFrame {
         panelPestamoBoton = new javax.swing.JPanel();
         txtPrestamosBoton = new javax.swing.JLabel();
         panelReporteBoton = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
+        lblCuentas = new javax.swing.JLabel();
         pnlBotton = new javax.swing.JPanel();
-        txtVersion = new javax.swing.JLabel();
-        txtFecha = new javax.swing.JLabel();
+        lblVersion = new javax.swing.JLabel();
+        lblFecha = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -88,21 +88,19 @@ public class MiembroScreen extends javax.swing.JFrame {
             .addGroup(pnlLogoLayout.createSequentialGroup()
                 .addGap(12, 12, 12)
                 .addComponent(txtLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(37, 37, 37)
                 .addComponent(txtSistemadeCooperativa)
-                .addContainerGap(483, Short.MAX_VALUE))
+                .addContainerGap(164, Short.MAX_VALUE))
         );
         pnlLogoLayout.setVerticalGroup(
             pnlLogoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlLogoLayout.createSequentialGroup()
                 .addGroup(pnlLogoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtLogo)
                     .addGroup(pnlLogoLayout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addComponent(txtSistemadeCooperativa))
-                    .addGroup(pnlLogoLayout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(txtLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(19, 19, 19)
+                        .addComponent(txtSistemadeCooperativa)))
+                .addGap(24, 24, 24))
         );
 
         javax.swing.GroupLayout pnlHeaderLayout = new javax.swing.GroupLayout(pnlHeader);
@@ -111,13 +109,13 @@ public class MiembroScreen extends javax.swing.JFrame {
             pnlHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlHeaderLayout.createSequentialGroup()
                 .addComponent(pnlLogo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 310, Short.MAX_VALUE))
+                .addGap(0, 604, Short.MAX_VALUE))
         );
         pnlHeaderLayout.setVerticalGroup(
             pnlHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlHeaderLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(pnlLogo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34)
+                .addComponent(pnlLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -240,9 +238,6 @@ public class MiembroScreen extends javax.swing.JFrame {
         txtBuscarPorCedulaOID.setForeground(new java.awt.Color(0, 0, 0));
         txtBuscarPorCedulaOID.setText("Buscar por cedula o ID");
 
-        tfBusquedaPorCedulaOID.setText("🔍 Busqueda por cedula o ID");
-        tfBusquedaPorCedulaOID.addActionListener(this::tfBusquedaPorCedulaOIDActionPerformed);
-
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Estado");
@@ -255,6 +250,9 @@ public class MiembroScreen extends javax.swing.JFrame {
 
         cbTipoDeCuenta.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tipo de Cuenta", "Ahorro", "Corriente", "Credito" }));
 
+        txtBuscarporCedulaOID.setText("🔍 Busqueda por cedula o ID");
+        txtBuscarporCedulaOID.addActionListener(this::txtBuscarporCedulaOIDActionPerformed);
+
         javax.swing.GroupLayout pnlContenLayout = new javax.swing.GroupLayout(pnlConten);
         pnlConten.setLayout(pnlContenLayout);
         pnlContenLayout.setHorizontalGroup(
@@ -263,10 +261,7 @@ public class MiembroScreen extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(pnlContenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlContenLayout.createSequentialGroup()
-                        .addGroup(pnlContenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtBuscarPorCedulaOID)
-                            .addComponent(tfBusquedaPorCedulaOID, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtGestionDeMiembros))
+                        .addComponent(txtGestionDeMiembros)
                         .addGroup(pnlContenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(pnlContenLayout.createSequentialGroup()
                                 .addGap(45, 45, 45)
@@ -278,11 +273,17 @@ public class MiembroScreen extends javax.swing.JFrame {
                                 .addComponent(panelNuevoMiembro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(panelExportarListado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(pnlContenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(pnlContenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 839, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(pnlContenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtTipodeCuenta)
-                            .addComponent(cbTipoDeCuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(pnlContenLayout.createSequentialGroup()
+                            .addGap(6, 6, 6)
+                            .addGroup(pnlContenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(txtBuscarPorCedulaOID)
+                                .addComponent(txtBuscarporCedulaOID, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(pnlContenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(txtTipodeCuenta)
+                                .addComponent(cbTipoDeCuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addGap(392, 392, 392)
                 .addGroup(pnlContenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(panelModificar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -303,7 +304,7 @@ public class MiembroScreen extends javax.swing.JFrame {
                     .addComponent(panelNuevoMiembro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtGestionDeMiembros)
                     .addComponent(panelExportarListado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                 .addGroup(pnlContenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtTipodeCuenta)
                     .addComponent(jLabel2)
@@ -312,7 +313,7 @@ public class MiembroScreen extends javax.swing.JFrame {
                 .addGroup(pnlContenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cbTipoDeCuenta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cbEstado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tfBusquedaPorCedulaOID, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtBuscarporCedulaOID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 359, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18))
@@ -323,26 +324,28 @@ public class MiembroScreen extends javax.swing.JFrame {
         pnlSidePanel.setBackground(new java.awt.Color(221, 238, 249));
 
         txtInicio.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        txtInicio.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtInicio.setText("Inicio");
 
         javax.swing.GroupLayout panelInicioBotonLayout = new javax.swing.GroupLayout(panelInicioBoton);
         panelInicioBoton.setLayout(panelInicioBotonLayout);
         panelInicioBotonLayout.setHorizontalGroup(
             panelInicioBotonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelInicioBotonLayout.createSequentialGroup()
-                .addGap(20, 20, 20)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelInicioBotonLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(txtInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(36, 36, 36))
         );
         panelInicioBotonLayout.setVerticalGroup(
             panelInicioBotonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelInicioBotonLayout.createSequentialGroup()
-                .addContainerGap(18, Short.MAX_VALUE)
+                .addContainerGap(17, Short.MAX_VALUE)
                 .addComponent(txtInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(15, 15, 15))
+                .addGap(16, 16, 16))
         );
 
         txtMiembroBoton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        txtMiembroBoton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtMiembroBoton.setText("Miembro");
 
         javax.swing.GroupLayout panelMienbroBottonLayout = new javax.swing.GroupLayout(panelMienbroBotton);
@@ -352,7 +355,7 @@ public class MiembroScreen extends javax.swing.JFrame {
             .addGroup(panelMienbroBottonLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addComponent(txtMiembroBoton, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
         panelMienbroBottonLayout.setVerticalGroup(
             panelMienbroBottonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -362,42 +365,45 @@ public class MiembroScreen extends javax.swing.JFrame {
                 .addGap(16, 16, 16))
         );
 
+        txtPrestamosBoton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        txtPrestamosBoton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtPrestamosBoton.setText("Prestamos");
 
         javax.swing.GroupLayout panelPestamoBotonLayout = new javax.swing.GroupLayout(panelPestamoBoton);
         panelPestamoBoton.setLayout(panelPestamoBotonLayout);
         panelPestamoBotonLayout.setHorizontalGroup(
             panelPestamoBotonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelPestamoBotonLayout.createSequentialGroup()
-                .addGap(20, 20, 20)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPestamoBotonLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(txtPrestamosBoton, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addGap(15, 15, 15))
         );
         panelPestamoBotonLayout.setVerticalGroup(
             panelPestamoBotonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelPestamoBotonLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(txtPrestamosBoton, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel4.setText("Reportes");
+        lblCuentas.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lblCuentas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblCuentas.setText("Cuentas");
 
         javax.swing.GroupLayout panelReporteBotonLayout = new javax.swing.GroupLayout(panelReporteBoton);
         panelReporteBoton.setLayout(panelReporteBotonLayout);
         panelReporteBotonLayout.setHorizontalGroup(
             panelReporteBotonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelReporteBotonLayout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33)
+                .addComponent(lblCuentas, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelReporteBotonLayout.setVerticalGroup(
             panelReporteBotonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelReporteBotonLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblCuentas, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
@@ -421,7 +427,7 @@ public class MiembroScreen extends javax.swing.JFrame {
                 .addComponent(panelInicioBoton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43)
                 .addComponent(panelMienbroBotton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(42, 42, 42)
+                .addGap(37, 37, 37)
                 .addComponent(panelPestamoBoton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(42, 42, 42)
                 .addComponent(panelReporteBoton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -433,13 +439,13 @@ public class MiembroScreen extends javax.swing.JFrame {
         pnlBotton.setBackground(new java.awt.Color(221, 238, 249));
         pnlBotton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(51, 51, 51)));
 
-        txtVersion.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        txtVersion.setForeground(new java.awt.Color(0, 0, 0));
-        txtVersion.setText("Version:");
+        lblVersion.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lblVersion.setForeground(new java.awt.Color(0, 0, 0));
+        lblVersion.setText("Version:");
 
-        txtFecha.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        txtFecha.setForeground(new java.awt.Color(0, 0, 0));
-        txtFecha.setText("Fecha:");
+        lblFecha.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lblFecha.setForeground(new java.awt.Color(0, 0, 0));
+        lblFecha.setText("Fecha:");
 
         javax.swing.GroupLayout pnlBottonLayout = new javax.swing.GroupLayout(pnlBotton);
         pnlBotton.setLayout(pnlBottonLayout);
@@ -447,9 +453,9 @@ public class MiembroScreen extends javax.swing.JFrame {
             pnlBottonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBottonLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
-                .addComponent(txtFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 441, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 441, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 564, Short.MAX_VALUE)
-                .addComponent(txtVersion)
+                .addComponent(lblVersion)
                 .addGap(133, 133, 133))
         );
         pnlBottonLayout.setVerticalGroup(
@@ -457,8 +463,8 @@ public class MiembroScreen extends javax.swing.JFrame {
             .addGroup(pnlBottonLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(pnlBottonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtVersion, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
-                    .addComponent(txtFecha))
+                    .addComponent(lblVersion, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
+                    .addComponent(lblFecha))
                 .addContainerGap())
         );
 
@@ -480,9 +486,9 @@ public class MiembroScreen extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void tfBusquedaPorCedulaOIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfBusquedaPorCedulaOIDActionPerformed
+    private void txtBuscarporCedulaOIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBuscarporCedulaOIDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_tfBusquedaPorCedulaOIDActionPerformed
+    }//GEN-LAST:event_txtBuscarporCedulaOIDActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -490,8 +496,10 @@ public class MiembroScreen extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cbTipoDeCuenta;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblCuentas;
+    private javax.swing.JLabel lblFecha;
+    private javax.swing.JLabel lblVersion;
     private javax.swing.JPanel panelEliminar;
     private javax.swing.JPanel panelExportarListado;
     private javax.swing.JPanel panelInicioBoton;
@@ -507,10 +515,9 @@ public class MiembroScreen extends javax.swing.JFrame {
     private javax.swing.JPanel pnlLogo;
     private javax.swing.JPanel pnlSidePanel;
     private javax.swing.JTable tableMiembros;
-    private javax.swing.JTextField tfBusquedaPorCedulaOID;
     private javax.swing.JLabel txtBuscarPorCedulaOID;
+    private javax.swing.JTextField txtBuscarporCedulaOID;
     private javax.swing.JLabel txtEliminar;
-    private javax.swing.JLabel txtFecha;
     private javax.swing.JLabel txtGestionDeMiembros;
     private javax.swing.JLabel txtInicio;
     private javax.swing.JLabel txtLogo;
@@ -522,6 +529,5 @@ public class MiembroScreen extends javax.swing.JFrame {
     private javax.swing.JLabel txtPrestamosBoton;
     private javax.swing.JLabel txtSistemadeCooperativa;
     private javax.swing.JLabel txtTipodeCuenta;
-    private javax.swing.JLabel txtVersion;
     // End of variables declaration//GEN-END:variables
 }

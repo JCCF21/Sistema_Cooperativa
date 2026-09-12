@@ -59,15 +59,15 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="pnlLogo" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="310" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="604" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                      <Component id="pnlLogo" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="pnlLogo" min="-2" pref="73" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -94,9 +94,9 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                           <Component id="txtLogo" min="-2" pref="76" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                           <Component id="txtSistemadeCooperativa" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="483" max="32767" attributes="0"/>
+                          <EmptySpace pref="164" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -104,16 +104,13 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="txtLogo" min="-2" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                                   <Component id="txtSistemadeCooperativa" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                                  <Component id="txtLogo" min="-2" pref="68" max="-2" attributes="0"/>
-                              </Group>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -160,11 +157,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="txtBuscarPorCedulaOID" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="tfBusquedaPorCedulaOID" alignment="0" min="-2" pref="260" max="-2" attributes="0"/>
-                                  <Component id="txtGestionDeMiembros" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="txtGestionDeMiembros" min="-2" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
@@ -181,11 +174,19 @@
                                   </Group>
                               </Group>
                           </Group>
-                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
                               <Component id="jScrollPane1" min="-2" pref="839" max="-2" attributes="0"/>
-                              <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                  <Component id="txtTipodeCuenta" min="-2" max="-2" attributes="0"/>
-                                  <Component id="cbTipoDeCuenta" min="-2" pref="256" max="-2" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="txtBuscarPorCedulaOID" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtBuscarporCedulaOID" min="-2" pref="244" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="txtTipodeCuenta" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cbTipoDeCuenta" min="-2" pref="256" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
                       </Group>
@@ -214,7 +215,7 @@
                           <Component id="txtGestionDeMiembros" min="-2" max="-2" attributes="0"/>
                           <Component id="panelExportarListado" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="29" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="txtTipodeCuenta" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -224,7 +225,7 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="cbTipoDeCuenta" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="cbEstado" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="tfBusquedaPorCedulaOID" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Component id="txtBuscarporCedulaOID" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jScrollPane1" min="-2" pref="359" max="-2" attributes="0"/>
@@ -431,14 +432,6 @@
                 <Property name="text" type="java.lang.String" value="Buscar por cedula o ID"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="tfBusquedaPorCedulaOID">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="\ud83d\udd0d Busqueda por cedula o ID" containsInvalidXMLChars="true"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfBusquedaPorCedulaOIDActionPerformed"/>
-              </Events>
-            </Component>
             <Component class="javax.swing.JLabel" name="jLabel2">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -491,6 +484,14 @@
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
               </AuxValues>
             </Component>
+            <Component class="javax.swing.JTextField" name="txtBuscarporCedulaOID">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="\ud83d\udd0d Busqueda por cedula o ID" containsInvalidXMLChars="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtBuscarporCedulaOIDActionPerformed"/>
+              </Events>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="pnlSidePanel">
@@ -527,7 +528,7 @@
                       <Component id="panelInicioBoton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                       <Component id="panelMienbroBotton" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                       <Component id="panelPestamoBoton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                       <Component id="panelReporteBoton" min="-2" max="-2" attributes="0"/>
@@ -542,19 +543,19 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                          <Component id="txtInicio" min="-2" pref="51" max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
                           <EmptySpace max="32767" attributes="0"/>
+                          <Component id="txtInicio" min="-2" pref="51" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace pref="18" max="32767" attributes="0"/>
+                          <EmptySpace pref="17" max="32767" attributes="0"/>
                           <Component id="txtInicio" min="-2" pref="30" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -565,6 +566,7 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="12" style="1"/>
                     </Property>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
                     <Property name="text" type="java.lang.String" value="Inicio"/>
                   </Properties>
                 </Component>
@@ -578,7 +580,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                           <Component id="txtMiembroBoton" min="-2" pref="88" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace pref="19" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -598,6 +600,7 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="12" style="1"/>
                     </Property>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
                     <Property name="text" type="java.lang.String" value="Miembro"/>
                   </Properties>
                 </Component>
@@ -608,10 +611,10 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
                           <Component id="txtPrestamosBoton" min="-2" pref="87" max="-2" attributes="0"/>
-                          <EmptySpace pref="18" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -620,7 +623,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="txtPrestamosBoton" min="-2" pref="33" max="-2" attributes="0"/>
-                          <EmptySpace pref="14" max="32767" attributes="0"/>
+                          <EmptySpace pref="19" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -628,6 +631,10 @@
               <SubComponents>
                 <Component class="javax.swing.JLabel" name="txtPrestamosBoton">
                   <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Segoe UI" size="12" style="1"/>
+                    </Property>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
                     <Property name="text" type="java.lang.String" value="Prestamos"/>
                   </Properties>
                 </Component>
@@ -639,8 +646,8 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                          <Component id="jLabel4" min="-2" pref="76" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="lblCuentas" min="-2" pref="57" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -649,19 +656,20 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                          <Component id="jLabel4" min="-2" pref="34" max="-2" attributes="0"/>
+                          <Component id="lblCuentas" min="-2" pref="34" max="-2" attributes="0"/>
                           <EmptySpace pref="17" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="jLabel4">
+                <Component class="javax.swing.JLabel" name="lblCuentas">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="12" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Reportes"/>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="text" type="java.lang.String" value="Cuentas"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -692,9 +700,9 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                      <Component id="txtFecha" min="-2" pref="441" max="-2" attributes="0"/>
+                      <Component id="lblFecha" min="-2" pref="441" max="-2" attributes="0"/>
                       <EmptySpace pref="564" max="32767" attributes="0"/>
-                      <Component id="txtVersion" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblVersion" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -704,8 +712,8 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txtVersion" alignment="3" pref="28" max="32767" attributes="0"/>
-                          <Component id="txtFecha" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblVersion" alignment="3" pref="28" max="32767" attributes="0"/>
+                          <Component id="lblFecha" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -713,7 +721,7 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="txtVersion">
+            <Component class="javax.swing.JLabel" name="lblVersion">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="12" style="1"/>
@@ -724,7 +732,7 @@
                 <Property name="text" type="java.lang.String" value="Version:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="txtFecha">
+            <Component class="javax.swing.JLabel" name="lblFecha">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="12" style="1"/>
