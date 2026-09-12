@@ -321,7 +321,6 @@ public class MiembroScreen extends javax.swing.JFrame {
         pnbackground.add(pnlConten, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 100, 1040, 530));
 
         pnlSidePanel.setBackground(new java.awt.Color(221, 238, 249));
-        pnlSidePanel.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
 
         txtInicio.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         txtInicio.setText("Inicio");
@@ -418,7 +417,7 @@ public class MiembroScreen extends javax.swing.JFrame {
         pnlSidePanelLayout.setVerticalGroup(
             pnlSidePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlSidePanelLayout.createSequentialGroup()
-                .addContainerGap(76, Short.MAX_VALUE)
+                .addContainerGap(80, Short.MAX_VALUE)
                 .addComponent(panelInicioBoton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43)
                 .addComponent(panelMienbroBotton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
