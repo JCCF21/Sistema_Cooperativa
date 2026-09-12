@@ -204,6 +204,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
         panelPestamoBoton.setBackground(new java.awt.Color(221, 238, 249));
         panelPestamoBoton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        panelPestamoBoton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                panelPestamoBotonMouseClicked(evt);
+            }
+        });
 
         txtPrestamosBoton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         txtPrestamosBoton.setForeground(new java.awt.Color(0, 0, 0));
@@ -300,17 +305,17 @@ public class FrmPrincipal extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBottonPanelLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addComponent(lblFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 441, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 564, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 565, Short.MAX_VALUE)
                 .addComponent(lblVersion)
-                .addGap(133, 133, 133))
+                .addGap(132, 132, 132))
         );
         pnlBottonPanelLayout.setVerticalGroup(
             pnlBottonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlBottonPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(pnlBottonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblVersion, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
-                    .addComponent(lblFecha))
+                .addGroup(pnlBottonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblVersion, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+                    .addComponent(lblFecha, javax.swing.GroupLayout.Alignment.LEADING))
                 .addContainerGap())
         );
 
@@ -351,6 +356,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
         mostrarPanel(new PnlMiembros());
     }//GEN-LAST:event_panelMienbroBotonMouseClicked
+
+    private void panelPestamoBotonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelPestamoBotonMouseClicked
+        // TODO add your handling code here:
+        mostrarPanel(new PnlPrestamos());
+    }//GEN-LAST:event_panelPestamoBotonMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
