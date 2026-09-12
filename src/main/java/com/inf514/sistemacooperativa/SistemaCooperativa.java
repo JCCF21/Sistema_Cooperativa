@@ -11,7 +11,7 @@ public class SistemaCooperativa {
            pantallaLogin.setVisible(true);
         });
         java.awt.EventQueue.invokeLater(()-> {
-            MiembroScreen pantallaMiembro = new MiembroScreen();
+            FrmPrincipal pantallaMiembro = new FrmPrincipal();
             pantallaMiembro.setVisible(true);
             pantallaMiembro.setLocationRelativeTo(null);
         });
